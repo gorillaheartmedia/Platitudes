@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLATITUDES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jarallax/dist/jarallax.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'PlatitudesFont';
+      src: url('a.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      color: white;
+    }
+
+    .jarallax {
+      height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: rgba(0,0,0,0.35);
+      padding: 1rem;
+    }
+
+    h1 {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 8rem;
+      letter-spacing: 3.4rem;
+      text-transform: uppercase;
+      margin: 0.5em 0;
+      text-shadow: 2px 2px 6px black;
+      opacity: 0;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .catchline {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      font-size: 1.6rem;
+      color: #ffd9ec;
+      margin-top: 0.5em;
+      text-shadow: 1px 1px 3px black;
+      max-width: 600px;
+      opacity: 1;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    /* second section */
+    .options-section {
+      background: #111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .option {
+      width: 100%;
+      text-align: left;
+      padding: 6em 4em;
+      background: rgba(255, 255, 255, 0.05);
+      cursor: pointer;
+      transition: background 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .option:hover {
+      background: rgba(255, 0, 119, 0.15);
+    }
+
+    .option h2 {
+      margin: 0;
+      font-size: 4rem;
+      font-family: 'PlatitudesFont', sans-serif;
+      letter-spacing: 0.3rem;
+    }
+
+    .desc {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5rem;
+      font-style: italic;
+      margin-top: 1em;
+      color: #f5d9f0;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    /* reveal image with diagonal pull + drift */
+    .reveal-img {
+      position: absolute;
+      top: 100%;     
+      left: -100%;   
+      width: 100%;
+      opacity: 0;
+      transform: translate(0,0);
+      transition: all 1s ease;
+      z-index: -1;
+    }
+
+    .reveal-img img {
+      width: 100%;
+      display: block;
+      transform: scale(1.1);
+      transition: transform 1s ease;
+    }
+
+    .option:hover .reveal-img {
+      top: -400px;   
+      left: 0;       
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .option:hover .reveal-img img {
+      animation: driftDiagonal 20s linear infinite; /* looping drift */
+      transform: scale(1);
+    }
+
+    /* diagonal drifting animation */
+    @keyframes driftDiagonal {
+      0%   { transform: translate(0,0) scale(1); }
+      50%  { transform: translate(40px, -40px) scale(1.05); }
+      100% { transform: translate(0,0) scale(1); }
+    }
+
+    .option-content {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero video splash -->
+  <div class="jarallax" data-jarallax data-speed="0.5" data-video-src="mp4:video.mp4">
+    <div class="overlay">
+      <h1>PLATITUDES</h1>
+      <p id="catchline" class="catchline"></p>
+    </div>
+  </div>
+
+  <!-- Options below -->
+  <section class="options-section">
+
+    <div class="option" onclick="goReadings()">
+      <div class="reveal-img">
+        <img src="reading-image.png" alt="Readings Reveal">
+      </div>
+      <div class="option-content">
+        <h2>READINGS</h2>
+        <p class="desc">Daily Readings, for when you run out of toilet paper.</p>
+      </div>
+    </div>
+
+    <div class="option" onclick="goVideos()">
+      <div class="reveal-img">
+        <img src="video-image.png" alt="Videos Reveal">
+      </div>
+      <div class="option-content">
+        <h2>VIDEOS</h2>
+        <p class="desc">Video Meditations, When you also could use a nap.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/jarallax/dist/jarallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jarallax/dist/jarallax-video.min.js"></script>
+  <script>
+    const catchlines = [
+      "Cleanse your mind while you cleanse your body.",
+      "Every seat is a throne if you believe.",
+      "When reading the back of the conditioner bottle is not enough.",
+      "Release negativity. Release… everything.",
+      "Sit in stillness. Scroll in silence.",
+      "Out with the old, in with the new.",
+      "Wisdom designed to be read regularly.",
+      "The path to enlightenment begins on porcelain.",
+      "Royal thoughts for your royal flush.",
+      "Because true reflection happens with tile floors."
+    ];
+
+    const el = document.getElementById("catchline");
+    let index = 0;
+
+    function showNextLine() {
+      el.style.opacity = 0;
+      setTimeout(() => {
+        el.textContent = catchlines[index];
+        el.style.opacity = 1;
+        index = (index + 1) % catchlines.length;
+      }, 1500);
+    }
+
+    showNextLine();
+    setInterval(showNextLine, 7000);
+
+    function goReadings() {
+      window.location.href = "readings.html";
+    }
+
+    function goVideos() {
+      window.location.href = "videos.html";
+    }
+  </script>
+</body>
+</html>

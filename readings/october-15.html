@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>October 15- PLATITUDES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'PlatitudesFont';
+      src: url('../a.ttf') format('truetype');
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background: #fefefe;
+      color: #222;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8em 2em;
+      font-size: 1.1rem;
+      z-index: 999;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .logo-text {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.3rem;
+    }
+
+    .nav {
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav a:hover {
+      color: #ff0077;
+    }
+
+    .logo-img img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    /* Hero */
+    .hero {
+      margin-top: 70px;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 1em;
+    }
+
+    .hero h1 {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    /* Reading body */
+    .reading-body {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 0 1em;
+      line-height: 1.7;
+    }
+
+    /* Nav controls */
+    .reading-nav {
+      max-width: 800px;
+      margin: 2em auto 4em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1em;
+    }
+
+    .reading-nav a {
+      background: #ff0077;
+      color: white;
+      text-decoration: none;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .reading-nav a:hover {
+      background: #ff3399;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <div class="logo-text">PLATITUDES</div>
+      <nav class="nav">
+        <a href="../readings.html" style="color:#ff0077;">Readings</a>
+        <a href="../videos.html">Videos</a>
+        <a href="../about.html">About Us</a>
+      </nav>
+    </div>
+    <div class="logo-img">
+      <img src="../logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <!-- Hero with quote -->
+  <section class="hero" style="background-image: url('../images/October-15.jpg');">
+    <div class="hero-content">
+      <h1>October 15</h1>
+      <p>
+     “Sometimes you have to stop flapping so someone can untangle you.”
+    </p>
+
+    </div>
+  </section>
+
+  <!-- Reading body -->
+  <section class="reading-body">
+    <p>
+
+Fear’s a funny thing — it shows up to protect us and ends up keeping us trapped. Like that bird snagged in a tree by a piece of twine, the closer someone approaches, the more we flap and panic at their rescue attempts. Anyone who has ever tried to saved a trapped animal knows this well, even when our intentions are to help, they perceive us as a threat.
+
+Sometimes, the only way to be freed is to stop fighting. To let life — or someone who actually cares — get close enough to do what we can’t. Trust doesn’t mean blindness; it means loosening the grip of fear long enough to allow rescue.
+
+So today, notice where you’re thrashing instead of trusting. Maybe what feels like danger is just deliverance wearing an unfamiliar face. Stop the panic just long enough and it could help set you free.
+</p>
+
+<div class="reading-nav">
+    <a href="October-14.html">← Previous</a>
+    <a href="../readings.html">Back to Readings</a>
+    <a href="October-16.html">Next →</a>
+  </div>
+
+</body>
+</html>

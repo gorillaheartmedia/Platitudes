@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>September 4- PLATITUDES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'PlatitudesFont';
+      src: url('../a.ttf') format('truetype');
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background: #fefefe;
+      color: #222;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8em 2em;
+      font-size: 1.1rem;
+      z-index: 999;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .logo-text {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.3rem;
+    }
+
+    .nav {
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav a:hover {
+      color: #ff0077;
+    }
+
+    .logo-img img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    /* Hero */
+    .hero {
+      margin-top: 70px;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 1em;
+    }
+
+    .hero h1 {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    /* Reading body */
+    .reading-body {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 0 1em;
+      line-height: 1.7;
+    }
+
+    /* Nav controls */
+    .reading-nav {
+      max-width: 800px;
+      margin: 2em auto 4em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1em;
+    }
+
+    .reading-nav a {
+      background: #ff0077;
+      color: white;
+      text-decoration: none;
+      padding: 0.6em 1.2em;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .reading-nav a:hover {
+      background: #ff3399;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <div class="logo-text">PLATITUDES</div>
+      <nav class="nav">
+        <a href="../readings.html" style="color:#ff0077;">Readings</a>
+        <a href="../videos.html">Videos</a>
+        <a href="../about.html">About Us</a>
+      </nav>
+    </div>
+    <div class="logo-img">
+      <img src="../logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <!-- Hero with quote -->
+  <section class="hero" style="background-image: url('../images/September-4.jpg');">
+    <div class="hero-content">
+      <h1>September 4</h1>
+      <p>
+      “Imposter syndrome: the fear that HR will realize that the qualifications on your resume are really copied ingredients for your grandma's tuna cassarole recipe.”
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Reading body -->
+  <section class="reading-body">
+    <p>
+    
+     No matter how much you accomplish, there’s that sneaky little voice whispering, “You’re not supposed to be here.” Which is hilarious, because apparently neither is anyone else — we’re all just winging it with varying levels of confidence and caffeine.
+
+Imposter syndrome isn’t proof you’re a fraud; it’s proof you’re self-aware enough to notice the absurdity of pretending adulthood is a skill. The real imposters never question themselves — they’re too busy making PowerPoints.
+
+So today, own the illusion. You don’t need to feel legit to be legit. Confidence is mostly acting — and you’ve clearly landed the part.
+<div class="reading-nav">
+    <a href="september-3.html">← Previous</a>
+    <a href="../readings.html">Back to Readings</a>
+    <a href="September-5.html">Next →</a>
+  </div>
+
+</body>
+</html>

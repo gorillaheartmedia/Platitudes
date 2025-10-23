@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - PLATITUDES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'PlatitudesFont';
+      src: url('../a.ttf') format('truetype');
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background: #fefefe;
+      color: #222;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8em 2em;
+      font-size: 1.1rem;
+      z-index: 999;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .logo-text {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.3rem;
+    }
+
+    .nav {
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav a:hover {
+      color: #ff0077;
+    }
+
+    .logo-img img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .hero {
+      margin-top: 70px;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background: url('logoa.png') center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 1em;
+    }
+
+    .hero h1 {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 2.8rem;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 3em auto;
+      padding: 0 1em;
+      line-height: 1.7;
+    }
+
+    .section {
+      margin-bottom: 2em;
+    }
+
+    h2 {
+      color: #ff0077;
+      font-family: 'PlatitudesFont', sans-serif;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5em;
+    }
+
+    blockquote {
+      border-left: 4px solid #ff0077;
+      padding-left: 1em;
+      font-style: italic;
+      color: #444;
+      margin: 1em 0;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5em;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.9);
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff0077;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="brand">
+      <div class="logo-text">PLATITUDES</div>
+      <nav class="nav">
+        <a href="../readings.html">Readings</a>
+        <a href="../videos.html">Videos</a>
+        <a href="../about.html" style="color:#ff0077;">About Us</a>
+      </nav>
+    </div>
+    <div class="logo-img">
+      <img src="logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>About Us</h1>
+    </div>
+  </section>
+
+  <main class="content">
+    <div class="section">
+      <h2>Welcome to Platitudes</h2>
+      <p>We are the only team brave enough to admit that we have <em>no idea what we’re doing</em> — and somehow made that our brand. Founded accidentally during a meeting that was supposed to be about something else, Platitudes began with a simple mission:</p>
+      <blockquote>“To say things that sound deep… until someone actually thinks about them.”</blockquote>
+    </div>
+
+    <div class="section">
+      <h2>Our Team</h2>
+      <ul>
+        <li><strong>Visionaries</strong> who still haven’t located the vision.</li>
+        <li><strong>Researchers</strong> who exclusively cite fortune cookies.</li>
+        <li><strong>Writers</strong> who believe deadlines are a social construct.</li>
+        <li>And one <strong>intern</strong> who insists on calling everything “content.”</li>
+      </ul>
+      <p>Our site was built to look profressional but was created during our breaks so the bosses thought we looked busy. Procrastination at is entry level finest</p>
+    </div>
+
+    <div class="section">
+      <h2>Our Core Values</h2>
+      <ul>
+        <li><strong>Ambiguity:</strong> If it’s clear, it’s wrong.</li>
+        <li><strong>Overconfidence:</strong> We’re 100% sure about 60% of this.</li>
+        <li><strong>Iterative Brilliance:</strong> Version 1 was bad. Version 2 will be worse, but ironically.</li>
+        <li><strong>Community:</strong> Because misery loves company.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Our Motto</h2>
+      <p><strong>“It’s not about the destination. Or the journey. It’s about the snacks along the way.”</strong></p>
+    </div>
+
+    <div class="section">
+      <h2>What to Expect</h2>
+      <p>Pull up a chair, open a tool, and prepare to wonder: <em>“Wait… is this genius or nonsense?”</em> (Answer: <strong>Yes.</strong>)</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Platitudes — Buzzwords harvested ethically. <a href="#">Contact</a> · <a href="#">Careers*</a> <small>(we’ll get back to you when synergy improves)</small></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
