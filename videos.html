@@ -136,6 +136,28 @@
     .reading-nav a:hover {
       background: #ff3399;
     }
+    .button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 2.5em;
+}
+
+.custom-btn {
+  background: #ff0077;
+  color: white;
+  text-decoration: none;
+  padding: 0.7em 1.4em;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.custom-btn:hover {
+  background: #ff3399;
+  transform: translateY(-2px);
+}
+
   </style>
 </head>
 <body>
@@ -171,6 +193,10 @@
 Sorry, Under Construction. check back later. After We done with coffee break. 
 
 </p>
+<div class="button-row">
+  <a href="../meditation.html" class="custom-btn">Meditation</a>
+  <a href="../video-essays.html" class="custom-btn">Video Essays</a>
+</div>
 
 </body>
 </html>
