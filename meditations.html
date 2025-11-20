@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditation Library - PLATITUDES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'PlatitudesFont';
+      src: url('../a.ttf') format('truetype');
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background: #fefefe;
+      color: #222;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8em 2em;
+      font-size: 1.1rem;
+      z-index: 999;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .logo-text {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.3rem;
+    }
+
+    .nav {
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav a:hover {
+      color: #ff0077;
+    }
+
+    .logo-img img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    /* Page Title Hero */
+    .hero {
+      margin-top: 70px;
+      height: 30vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-image: url('logoa.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 1em;
+    }
+
+    .hero h1 {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    /* Meditation List */
+    .meditation-list {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 0 1em;
+    }
+
+    .meditation-item {
+      background: #fff;
+      padding: 1em 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1em;
+      border-left: 5px solid #ff0077;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .meditation-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .meditation-item a {
+      text-decoration: none;
+      color: #222;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .meditation-item a:hover {
+      color: #ff0077;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <div class="logo-text">PLATITUDES</div>
+      <nav class="nav">
+        <a href="readings.html">Readings</a>
+        <a href="videos.html">Videos</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
+    <div class="logo-img">
+      <img src="logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <!-- Title Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Meditation Library</h1>
+      <p>Center your mind. Quiet the noise. Reboot the Cosmic Router.</p>
+    </div>
+  </section>
+
+  <!-- Meditation List -->
+  <section class="meditation-list">
+
+    <!-- November 2025 -->
+    <div class="meditation-item">
+      <a href="meditations/cosmic-router.html">
+        November 2025 — The Cosmic Router
+      </a>
+    </div>
+
+  </section>
+
+</body>
+</html>
