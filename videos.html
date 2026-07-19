@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>September 30- PLATITUDES</title>
+  <title>Videos - PLATITUDES</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
   <style>
     @font-face {
@@ -153,9 +153,16 @@
   transition: background 0.3s, transform 0.2s;
 }
 
-.custom-btn:hover {
+    .custom-btn:hover {
   background: #ff3399;
   transform: translateY(-2px);
+}
+
+.video-player {
+  width: 100%;
+  max-height: 70vh;
+  background: #000;
+  border-radius: 6px;
 }
 
   </style>
@@ -180,23 +187,22 @@
   <!-- Hero with quote -->
   <section class="hero" style="background-image: url('logoa.png');">
     <div class="hero-content">
-      <h1>Video Content Error</h1>
-      <p>
-    </p>
-
+      <h1>Videos</h1>
+      <p>Intense Stillness</p>
     </div>
   </section>
 
   <!-- Reading body -->
   <section class="reading-body">
-    <p>
-Sorry, Still Under Construction. Check back later. After we're done with coffee break. We will be updating the meditations on a monthly basis and new video essays periodically.
-
-</p>
+    <video class="video-player" controls preload="metadata">
+      <source src="videos/intense stillness.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 <div class="button-row">
-  <a href="../meditations.html" class="custom-btn">Meditation</a>
-  <a href="../video-essays.html" class="custom-btn">Video Essays</a>
+  <a href="meditations.html" class="custom-btn">Meditation</a>
+  <a href="videos.html" class="custom-btn">Video Essays</a>
 </div>
+  </section>
 
 </body>
 </html>
