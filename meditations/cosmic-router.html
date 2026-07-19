@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cosmic Router – November 2025 Meditation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'PlatitudesFont';
+      src: url('../a.ttf') format('truetype');
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background: #fefefe;
+      color: #222;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8em 2em;
+      font-size: 1.1rem;
+      z-index: 999;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .logo-text {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.3rem;
+    }
+
+    .nav {
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #ff0077;
+    }
+
+    .logo-img img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    /* Hero */
+    .hero {
+      margin-top: 70px;
+      height: 45vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-image: url('../logoa.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 1em;
+    }
+
+    .hero h1 {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.3em;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    /* Content Body */
+    .content {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 0 1em;
+      line-height: 1.7;
+    }
+
+    .content h2 {
+      font-family: 'PlatitudesFont', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.5em;
+    }
+
+    .video-frame {
+      width: 100%;
+      height: 350px;
+      margin: 2em 0;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+      display: flex;
+      gap: 1.5em;
+      justify-content: center;
+      margin-top: 3em;
+    }
+
+    .nav-buttons a {
+      background: #ff0077;
+      color: white;
+      padding: 0.7em 1.4em;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .nav-buttons a:hover {
+      background: #ff3399;
+      transform: translateY(-2px);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand">
+      <div class="logo-text">PLATITUDES</div>
+      <nav class="nav">
+        <a href="../readings.html">Readings</a>
+        <a href="../videos.html">Videos</a>
+        <a href="../about.html">About Us</a>
+      </nav>
+    </div>
+    <div class="logo-img">
+      <img src="../logo.png" alt="Logo">
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>The Cosmic Router</h1>
+      <p>November 2025 Meditation</p>
+    </div>
+  </section>
+
+
+  <!-- MAIN CONTENT -->
+  <section class="content">
+
+<div class="video-frame">
+  <iframe 
+    width="100%" 
+    height="100%" 
+    src="https://www.youtube.com/embed/kwZOZaQ0y7U"
+    title="Cosmic Router Meditation"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+    <h2>About This Meditation</h2>
+    <p>
+      This month’s meditation explores the idea of the <strong>Cosmic Router</strong> — the unseen network
+      that quietly threads your awareness through layers of calm, focus, memory, imagination, and the
+      deep internal signal beneath all thought.
+    </p>
+
+    <p>
+      As you listen, imagine each breath as a signal traveling across a vast, luminous network —
+      stabilizing, reconnecting, and restoring clarity to your inner bandwidth.
+    </p>
+
+
+    <!-- NAVIGATION BUTTONS -->
+    <div class="nav-buttons">
+      <a href="../meditations.html">Back to Meditation List</a>
+      <a href="../videos.html">More Video Content</a>
+    </div>
+
+  </section>
+
+</body>
+</html>
