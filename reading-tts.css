@@ -1,0 +1,55 @@
+.reading-body {
+  position: relative;
+}
+
+.tts-controls {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: -3.5em;
+}
+
+.tts-toggle {
+  background: #ff0077;
+  color: white;
+  border: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  font-family: inherit;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.tts-toggle svg {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin: auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.tts-toggle:hover {
+  background: #ff3399;
+  transform: translateY(-2px);
+}
+
+.tts-toggle.is-active {
+  background: #222;
+  color: #ff0077;
+}
+
+@media (max-width: 960px) {
+  .tts-controls {
+    position: static;
+    margin: -0.5em 0 1em;
+  }
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>April 19- PLATITUDES</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../reading-tts.css">
   <style>
     @font-face {
       font-family: 'PlatitudesFont';
@@ -136,6 +137,7 @@
     .reading-nav a:hover {
       background: #ff3399;
     }
+
   </style>
 </head>
 <body>
@@ -168,16 +170,27 @@
 
   <!-- Reading body -->
   <section class="reading-body">
+<div class="tts-controls" aria-label="Text to speech controls">
+  <button type="button" class="tts-toggle" onclick="toggleReadingAudio()" aria-label="Listen to reading" aria-pressed="false" title="Listen to reading">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M3 11v3a2 2 0 0 0 2 2h2l3 5h3l-2.4-5.8L21 18V6L5 10a2 2 0 0 0-2 1z"></path>
+      <path d="M7 16v-6"></path>
+    </svg>
+  </button>
+</div>
     <p>
       It spins, it crackles, it takes its sweet time. There’s no skipping ahead — you either listen or you don’t. And when the needle drops, it feels like ceremony: a small universe of sound humming to life right there in your hands.
 
 Vinyl reminds us that patience has rhythm. Music isn’t just about sound — it’s about waiting for the right note. Of course, it also reminds us that dust collects faster than good habits and scratches have opinions about your favorite tracks.
 
 So today, move at vinyl speed. Let the world spin, let the noise settle, and savor the track you’re in — pops, hisses, and all.</p>
+
 <div class="reading-nav">
     <a href="april-18.html">← Previous</a>
     <a href="../readings.html">Back to Readings</a>
     <a href="april-20.html">Next →</a>
   </div>
 
+
+  <script src="../reading-tts.js"></script>
 </body></html>

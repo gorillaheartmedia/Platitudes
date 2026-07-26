@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>June 20- PLATITUDES</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../reading-tts.css">
   <style>
     @font-face {
       font-family: 'PlatitudesFont';
@@ -136,6 +137,7 @@
     .reading-nav a:hover {
       background: #ff3399;
     }
+
   </style>
 </head>
 <body>
@@ -169,6 +171,14 @@
 
   <!-- Reading body -->
   <section class="reading-body">
+<div class="tts-controls" aria-label="Text to speech controls">
+  <button type="button" class="tts-toggle" onclick="toggleReadingAudio()" aria-label="Listen to reading" aria-pressed="false" title="Listen to reading">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M3 11v3a2 2 0 0 0 2 2h2l3 5h3l-2.4-5.8L21 18V6L5 10a2 2 0 0 0-2 1z"></path>
+      <path d="M7 16v-6"></path>
+    </svg>
+  </button>
+</div>
     <p>
 
       Impatience loves to disguise itself as motivation. It tells you to move faster, push harder, fix it now. But most things worth having ripen on their own schedule. No amount of pacing will make dawn arrive sooner — it only makes you miss the color change when it finally does.
@@ -180,11 +190,14 @@ So today, when life drags its feet, don’t curse the dark. Brew something warm,
      
 </p>
 
+
 <div class="reading-nav">
     <a href="june-19.html">← Previous</a>
     <a href="../readings.html">Back to Readings</a>
     <a href="june-21.html">Next →</a>
   </div>
 
+
+  <script src="../reading-tts.js"></script>
 </body>
 </html>

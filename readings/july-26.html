@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>July 26- PLATITUDES</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../reading-tts.css">
   <style>
     @font-face {
       font-family: 'PlatitudesFont';
@@ -136,6 +137,7 @@
     .reading-nav a:hover {
       background: #ff3399;
     }
+
   </style>
 </head>
 <body>
@@ -170,6 +172,14 @@
 
   <!-- Reading body -->
   <section class="reading-body">
+<div class="tts-controls" aria-label="Text to speech controls">
+  <button type="button" class="tts-toggle" onclick="toggleReadingAudio()" aria-label="Listen to reading" aria-pressed="false" title="Listen to reading">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M3 11v3a2 2 0 0 0 2 2h2l3 5h3l-2.4-5.8L21 18V6L5 10a2 2 0 0 0-2 1z"></path>
+      <path d="M7 16v-6"></path>
+    </svg>
+  </button>
+</div>
     <p>
 
    We treat creativity like it’s a mystical lightning bolt — but it’s really just curiosity that forgot to get dressed. It doesn’t demand discipline so much as permission to look ridiculous for a while. The best ideas show up right after you stop trying to impress them.
@@ -181,11 +191,14 @@ So today, let yourself make something absurd. Scribble, hum, tinker, rearrange. 
 
 </p>
 
+
 <div class="reading-nav">
     <a href="july-25.html">← Previous</a>
     <a href="../readings.html">Back to Readings</a>
     <a href="july-27.html">Next →</a>
   </div>
 
+
+  <script src="../reading-tts.js"></script>
 </body>
 </html>

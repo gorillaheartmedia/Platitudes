@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>July 5- PLATITUDES</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../reading-tts.css">
   <style>
     @font-face {
       font-family: 'PlatitudesFont';
@@ -137,6 +138,7 @@
     .reading-nav a:hover {
       background: #ff3399;
     }
+
   </style>
 </head>
 <body>
@@ -171,6 +173,14 @@
 
   <!-- Reading body -->
   <section class="reading-body">
+<div class="tts-controls" aria-label="Text to speech controls">
+  <button type="button" class="tts-toggle" onclick="toggleReadingAudio()" aria-label="Listen to reading" aria-pressed="false" title="Listen to reading">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M3 11v3a2 2 0 0 0 2 2h2l3 5h3l-2.4-5.8L21 18V6L5 10a2 2 0 0 0-2 1z"></path>
+      <path d="M7 16v-6"></path>
+    </svg>
+  </button>
+</div>
     <p>
  It’s not flashy, doesn’t trend, and won’t sell you anything. Compared to excitement, it looks suspiciously boring. But peace isn’t supposed to perform — it’s supposed to exhale.
 
@@ -180,11 +190,14 @@ So today, resist the urge for constant “new.” Sip something slow, stare at n
      
     </p>
 
+
 <div class="reading-nav">
     <a href="july-4.html">← Previous</a>
     <a href="../readings.html">Back to Readings</a>
     <a href="july-6.html">Next →</a>
   </div>
 
+
+  <script src="../reading-tts.js"></script>
 </body>
 </html>
